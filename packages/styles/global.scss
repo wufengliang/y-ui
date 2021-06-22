@@ -1,0 +1,13 @@
+@import "./theme/default.scss";
+@import "./theme/orange.scss";
+@import "./main.scss";
+
+$themes: map-merge($theme-default, $theme-orange);
+
+@mixin theme {
+  @each $currentThemeName, $currentTheme in $themes {
+    @include ThemeContext($currentThemeName, $currentTheme) {
+      @content;
+    }
+  }
+}

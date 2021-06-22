@@ -1,0 +1,20 @@
+@function getKeyValue($globalTheme, $key) {
+  @return map-get($globalTheme, $key);
+}
+
+@mixin ThemeContext($name, $theme) {
+  $globalTheme: $theme !global;
+  $globalThemeName: $name !global;
+
+  $btnPrimary: getKeyValue($theme, btnPrimary) !global;
+
+  @if (str-length($name) >0) {
+    .theme-#{name} {
+      @content;
+    }
+  } @else {
+    html {
+      @content;
+    }
+  }
+}
