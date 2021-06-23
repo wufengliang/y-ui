@@ -1,0 +1,92 @@
+@import "../../styles/common.scss";
+
+@include theme {
+  .y-checkbox-wrapper {
+    display: inline-block;
+    cursor: $handCursor;
+    font-size: $number-14;
+    user-select: none;
+    .y-checkbox {
+      display: inline-block;
+      position: relative;
+      vertical-align: sub;
+      & + span {
+        padding-left: $number-8;
+        padding-right: $number-8;
+      }
+      &.y-checkbox-disabled {
+        border-color: $disabled_color;
+        background-color: $disabled_background_color;
+        cursor: $notAllowCursor;
+        & + span {
+          color: $disabled_color;
+        }
+        .y-checkbox-inner {
+          &:hover {
+            border-color: $disabled_color;
+          }
+        }
+      }
+      &.y-checkbox-indeterminate {
+        .y-checkbox-inner {
+          border-color: $primaryColor;
+          &:after {
+            top: 50%;
+            left: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: $primaryColor;
+            border: 0;
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+            content: " ";
+          }
+        }
+      }
+      &.y-checkbox-checked {
+        .y-checkbox-inner {
+          background-color: $primaryColor;
+          border-color: $primaryColor;
+          &:after {
+            border: 2px solid #fff;
+            border-top: 0;
+            border-left: 0;
+            transform: rotate(45deg) scale(0.9) translate(-50%, -50%);
+            opacity: 1;
+            transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+            content: " ";
+            left: 15%;
+            top: 42%;
+            width: 5px;
+            height: 10px;
+          }
+        }
+      }
+      .y-checkbox-input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+      .y-checkbox-inner {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border: 1px solid $border_default_color;
+        &:after {
+          position: absolute;
+          display: table;
+        }
+        &:hover {
+          border-color: $primaryColor;
+        }
+      }
+    }
+  }
+}

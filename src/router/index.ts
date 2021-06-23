@@ -10,6 +10,11 @@ const routes = [
     path: '/button',
     component: () => import('@/pages/button.vue'),
   },
+  {
+    name: 'Checkbox 多选框',
+    path: '/checkbox',
+    component: () => import('@/pages/checkbox.vue'),
+  },
 ];
 
 export default createRouter({

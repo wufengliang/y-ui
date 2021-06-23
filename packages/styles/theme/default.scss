@@ -1,7 +1,7 @@
 @import "../variable.scss";
 $theme-default: (
   "": (
-    btnPrimary: $btnPrimary,
-    btnDanger: $btnDanger,
+    primaryColor: $primaryColor,
+    dangerColor: $dangerColor,
   ),
 );

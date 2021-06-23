@@ -2,6 +2,7 @@ import { defineComponent } from 'vue';
 import './button.scss';
 
 export default defineComponent({
+  name: 'y-button',
   props: {
     type: {
       type: String,

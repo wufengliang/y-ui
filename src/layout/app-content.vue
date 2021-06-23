@@ -13,6 +13,7 @@ export default {
 <style scoped>
 main {
   flex: 1;
+  padding: 20px;
   overflow-y: auto;
 }
 </style>

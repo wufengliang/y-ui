@@ -1,15 +1,22 @@
-@function getKeyValue($globalTheme, $key) {
-  @return map-get($globalTheme, $key);
+@import "./theme/default.scss";
+@import "./theme//orange.scss";
+$default-theme: map-get($theme-default, "");
+
+@function getKeyValue($key) {
+  @if (map-has-key($globalTheme, $key)) {
+    @return map-get($globalTheme, $key);
+  } @else {
+    @return map-get($default-theme, $key);
+  }
 }
 
 @mixin ThemeContext($name, $theme) {
   $globalTheme: $theme !global;
-  $globalThemeName: $name !global;
-
-  $btnPrimary: getKeyValue($theme, btnPrimary) !global;
-
+  $primaryColor: getKeyValue(primaryColor) !global;
+  $dangerColor: getKeyValue(dangerColor) !global;
   @if (str-length($name) >0) {
     .theme-#{name} {
+      background-color: #f00;
       @content;
     }
   } @else {

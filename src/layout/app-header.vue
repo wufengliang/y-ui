@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="header-left"><span>Y-UI</span>组件库</div>
+    <div class="header-left">Y-UI组件库</div>
   </header>
 </template>
 
@@ -21,7 +21,10 @@ header {
     line-height: 64px;
     text-align: center;
     font-size: 25px;
-    font-style: initial;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+      Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-style: italic;
+    color: #409eff;
   }
 }
 </style>

@@ -7,7 +7,7 @@
     height: $btn-default-height;
     border-radius: $box-radius-2;
     border: 1px solid transparent;
-    padding: 0 $num-15;
+    padding: 0 $number-15;
     cursor: $handCursor;
     &:hover {
       opacity: 0.8;
@@ -19,12 +19,12 @@
       cursor: $notAllowCursor;
     }
     &-primary {
-      background-color: $btnPrimary;
-      border-color: $btnPrimary;
+      background-color: $primaryColor;
+      border-color: $primaryColor;
     }
     &-danger {
-      background-color: $btnDanger;
-      border-color: $btnDanger;
+      background-color: $dangerColor;
+      border-color: $dangerColor;
     }
     &-primary,
     &-danger {
@@ -36,15 +36,15 @@
     &-link {
       background-color: $white;
       border-color: $white;
-      color: $btnPrimary;
+      color: $primaryColor;
     }
     &-default,
     &-dashed {
       background-color: $white;
       border-color: $border_default_color;
       &:hover {
-        color: $btnPrimary;
-        border-color: $btnPrimary;
+        color: $primaryColor;
+        border-color: $primaryColor;
       }
     }
   }
