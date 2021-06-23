@@ -2,6 +2,7 @@ const path = require('path');
 const resolve = filePath => path.join(__dirname, './', filePath);
 
 module.exports = {
+    publicPath: './',
     pages: {
         index: {
             entry: resolve('src/main.ts'),
