@@ -33,7 +33,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       # Install Project Packages
       - name: Install Packages
-        run: npm run install 
+        run: npm install 
       
       - name: Build Pages
         run: npm run build
