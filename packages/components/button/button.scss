@@ -1,3 +1,51 @@
+@import "../../styles/common.scss";
+@import "../../styles/mixins/colors.scss";
+
 @include theme {
-  
+  .y-btn {
+    outline: 0;
+    height: $btn-default-height;
+    border-radius: $box-radius-2;
+    border: 1px solid transparent;
+    padding: 0 $num-15;
+    cursor: $handCursor;
+    &:hover {
+      opacity: 0.8;
+    }
+    &[disabled] {
+      border-color: $disabled_color;
+      background-color: $disabled_background_color;
+      color: $disabled_color;
+      cursor: $notAllowCursor;
+    }
+    &-primary {
+      background-color: $btnPrimary;
+      border-color: $btnPrimary;
+    }
+    &-danger {
+      background-color: $btnDanger;
+      border-color: $btnDanger;
+    }
+    &-primary,
+    &-danger {
+      color: $white;
+    }
+    &-dashed {
+      border-style: dashed;
+    }
+    &-link {
+      background-color: $white;
+      border-color: $white;
+      color: $btnPrimary;
+    }
+    &-default,
+    &-dashed {
+      background-color: $white;
+      border-color: $border_default_color;
+      &:hover {
+        color: $btnPrimary;
+        border-color: $btnPrimary;
+      }
+    }
+  }
 }

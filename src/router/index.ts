@@ -6,7 +6,7 @@ const routes = [
     redirect: '/button',
   },
   {
-    name: 'button',
+    name: 'Button 按钮',
     path: '/button',
     component: () => import('@/pages/button.vue'),
   },

@@ -28,6 +28,7 @@ export default defineComponent({
 * {
   margin: 0;
   padding: 0;
+  color: rgba(0, 0, 0, 0.85);
 }
 
 .flex-box {
