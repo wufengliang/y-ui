@@ -1,0 +1,24 @@
+@import "../../styles/common.scss";
+
+.y-input-number-body {
+  position: relative;
+  width: 90px;
+  border: 1px solid $border_default_color;
+  &.y-input-number-body-focused {
+    border-color: $primaryColor;
+  }
+  .y-input-number-content-wrapper {
+  }
+  .y-input-number-handler-wrapper {
+    .y-input {
+      box-sizing: border-box;
+      outline: $none;
+      border: $none;
+      width: 100%;
+      padding: 0 $number-8;
+      &.y-input-size-default {
+        height: $number-32;
+      }
+    }
+  }
+}

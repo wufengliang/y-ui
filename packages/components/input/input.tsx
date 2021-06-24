@@ -58,8 +58,8 @@ export default defineComponent({
 
     return () => (
       <span class={classes.value}
-        onClick={() => { isFocus.value = !isFocus.value; }}
-        onBlur={() => { isFocus.value = false; }}
+        onFocusin={() => { isFocus.value = !isFocus.value; }}
+        onFocusout={() => { isFocus.value = false; }}
       >
         {renderPrefix()}
         {typeof props.prefix === 'object' && isVNode(props.prefix) && slots.prefix!()}

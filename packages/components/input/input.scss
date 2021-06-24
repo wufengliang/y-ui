@@ -14,15 +14,15 @@
       outline: none;
     }
     &.y-input-size-default {
-      height: 32px;
+      height: $number-32;
       font-size: $number-14;
     }
     &.y-input-size-small {
-      height: 24px;
+      height: $number-24;
       font-size: $number-12;
     }
     &.y-input-size-large {
-      height: 40px;
+      height: $number-40;
       font-size: $number-16;
     }
     .y-input {

@@ -20,6 +20,11 @@ const routes = [
     path: '/input',
     component: () => import('@/pages/input.vue'),
   },
+  {
+    name: 'InputNumber 数字输入框',
+    path: '/input-number',
+    component: () => import('@/pages/input-number.vue'),
+  },
 ];
 
 export default createRouter({

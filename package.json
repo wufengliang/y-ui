@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "highlight.js": "^11.0.1",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.10"
+    "vue-router": "^4.0.10",
+    "@highlightjs/vue-plugin": "^1.0.2"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
