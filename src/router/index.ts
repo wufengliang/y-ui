@@ -15,6 +15,11 @@ const routes = [
     path: '/checkbox',
     component: () => import('@/pages/checkbox.vue'),
   },
+  {
+    name: 'Input 输入框',
+    path: '/input',
+    component: () => import('@/pages/input.vue'),
+  },
 ];
 
 export default createRouter({

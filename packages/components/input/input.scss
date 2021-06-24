@@ -1,0 +1,41 @@
+@import "../../styles/common.scss";
+@import "../../styles/mixins/colors.scss";
+
+@include theme {
+  .y-input-wrapper {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid $border_default_color;
+    padding: $number-4 $number-12;
+    &.y-input-warpper-focused {
+      border-color: $primaryColor;
+      outline: none;
+    }
+    &.y-input-size-default {
+      height: 32px;
+      font-size: $number-14;
+    }
+    &.y-input-size-small {
+      height: 24px;
+      font-size: $number-12;
+    }
+    &.y-input-size-large {
+      height: 40px;
+      font-size: $number-16;
+    }
+    .y-input {
+      width: 100%;
+      font-size: 12px;
+      outline: $none;
+      border: $none;
+    }
+    .y-input-prefix {
+      margin-right: $number-4;
+    }
+    .y-input-suffix {
+      margin-left: $number-4;
+    }
+  }
+}

@@ -1,11 +1,13 @@
 import { App, Component } from 'vue';
-import YButton from './components/button';
+import { YButton } from './components/button';
 import { YCheckbox, YCheckboxGroup } from './components/checkbox/index';
+import { YInput } from './components/input';
 
 const COMPONENTS = [
   YButton,
   YCheckbox,
   YCheckboxGroup,
+  YInput,
 ];
 
 const install = (app: App): void => {
@@ -19,6 +21,7 @@ export default {
   YButton,
   YCheckbox,
   YCheckboxGroup,
+  YInput,
 };
 
 export {
